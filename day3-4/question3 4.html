@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question3 4</title>
+</head>
+<body>
+    <h1>Question 3 and 4</h1>
+    
+    <script>
+        var arr = [
+        {   name: "Shubham",
+            age: 20,
+            country: "India",
+            hobbies: [ "runnng", "listening music", "talking to new people"]   
+        },
+        {   name: "Tiwari",
+            age: 21,
+            country: "India",
+            hobbies: [ "dancing", "bike riding", "gym"]   
+        },
+        {   name: "Black Panther",
+            age: 42,
+            country: "Wakanda",
+            hobbies: [ "Fighting", "travelling", "music"]   
+        },
+        {   name: "Harsh",
+            age: 18,
+            country: "Europe",
+            hobbies: [ "gym", "book reading", "travelling"]   
+        }
+        ]
+        function ob1()
+        {
+            for(let i=0;i<arr.length;i++)
+            {
+                console.log(arr[i].name)
+                console.log(arr[i].age)
+                console.log(arr[i].country)
+                var temp = arr[i].hobbies
+                temp.forEach(ele => {
+                    console.log(ele)
+                });
+            }
+        }
+        ob1();
+
+        /* -------------------------*/
+
+        function ob2()
+        {
+            for(let i=0;i<arr.length;i++)
+            {
+                if(arr[i].age<30)
+                {
+                    console.log(arr[i].name)
+                console.log(arr[i].age)
+                console.log(arr[i].country)
+                var temp = arr[i].hobbies
+                temp.forEach(ele => {
+                    console.log(ele)
+                });
+            }
+                }    
+            }
+        ob2();
+/* -----------------------------------------------------*/
+
+function ob3()
+        {
+            for(let i=0;i<arr.length;i++)
+            {
+                if(arr[i].country==="India"||arr[i].country==="india"||arr[i].country==="INDIA")
+                {
+                    console.log(arr[i].name)
+                console.log(arr[i].age)
+                console.log(arr[i].country)
+                var temp = arr[i].hobbies
+                temp.forEach(ele => {
+                    console.log(ele)
+                });
+            }
+                }    
+            }
+        ob3();
+
+    </script>
+</body>
+</html>

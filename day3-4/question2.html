@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question2</title>
+</head>
+<body>
+    <input id="input1" type="text" placeholder="Enter some text"><br><br>
+    <input id="input2" type="text" placeholder="result"><br><br>
+    <button onclick="copy()">Click to copy</button>
+
+    <script>
+        function copy()
+        {
+            var ele = document.getElementById("input1")
+            console.log(ele.value)
+            var ele2 = document.getElementById("input2")
+            ele2.value=ele.value
+        }
+    </script>
+</body>
+</html>

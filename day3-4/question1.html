@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image" src="kid1.jpg" alt=""  width="300px">
+    <button onclick="reverse()">Reverse Change</button>
+    <button onclick="change1()">Change1</button>
+    <button onclick="change2()">Change2</button>
+    <script>
+        function change1()
+        {
+            var ele2= document.getElementById("image")
+            var newurl = "kid2.jpg"
+            ele2.src = newurl;
+        }
+        function change2()
+        {
+            var ele3= document.getElementById("image")
+            var newurl2 = "kid3.jpg"
+            ele3.src = newurl2;
+        }
+        function reverse()
+        {
+            var ele1= document.getElementById("image")
+            var newurl0 = "kid1.jpg"
+            ele1.src = newurl0;
+        }
+    </script>
+</body>
+</html>
